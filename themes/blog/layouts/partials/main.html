@@ -1,5 +1,5 @@
 {{ if isset .Params "tags" }}
-<p class="d-n">{{ delimit .Params.keywords ", " }}</p>
+<p class="fs-11">#{{ delimit .Params.keywords " #" }}</p>
 <div class="d-g gg-15 body">
   <div class="p-r">
     <img loading="lazy" class="thumb of-c d-b" src="{{ .Params.image }}" alt="{{ .CurrentSection.Title }} - {{ .Title }}">

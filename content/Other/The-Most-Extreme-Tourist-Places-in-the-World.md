@@ -10,7 +10,7 @@ keywords:
 - the tourist attraction
 - tourist attractions
 - tourist attractions destin
-- Other
+- other
 tags:
 - Extreme Tourist Places
 ---
