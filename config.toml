@@ -1,0 +1,39 @@
+baseURL = 'https://4vacation.pages.dev'
+languageCode = 'en-us'
+title = '4vacation'
+theme = 'blog'
+enableRobotsTXT = 'true'
+paginate = 10
+summaryLength = 40
+copyright = '2022. Blog ID - All rights reserved'
+
+[Author]
+    name = 'Rizqy Romadhon A'
+    email = 'rizqyblogspot@gmail.com'
+[params]
+  Description = 'The most beautiful, best, biggest tourist attractions, all on 4vacation. 4vacation itself is a blog that provides reading references about all things related to the world of holidays in Indonesia and in the world.'
+  favicon = 'https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/512/202124/external-health-sport-tanah-basah-basic-outline-tanah-basah.png'
+  twitter = 'Rizqy'
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 5
+    ordered = false
+[markup.goldmark.renderer]
+  unsafe = true
+[taxonomies]
+  tags = 'tags'
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "keywords"
+    weight = 80
+  [[related.indices]]
+    name = "title"
+    weight = 70
