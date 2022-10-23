@@ -11,7 +11,7 @@ copyright = '2022. Blog ID - All rights reserved'
     name = 'Rizqy Romadhon A'
     email = 'rizqyblogspot@gmail.com'
 [params]
-  Description = 'The most beautiful, best, biggest tourist attractions, all on 4vacation. 4vacation itself is a blog that provides reading references about all things related to the world of holidays in Indonesia and in the world.'
+  Description = 'The most beautiful, best tourist attractions. 4vacation itself is a blog that provides reading references about all things related to the world of holidays in Indonesia and in the world.'
   favicon = 'https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/512/202124/external-health-sport-tanah-basah-basic-outline-tanah-basah.png'
   twitter = 'Rizqy'
 [markup]
