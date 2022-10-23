@@ -1,11 +1,11 @@
 {{ if isset .Params "tags" }}
 <p class="fs-11">#{{ delimit .Params.keywords " #" }}</p>
-<div class="d-g gg-15 body">
+<div class="d-g gg-15 body d-b o-h w-f">
   <div class="p-r">
     <img loading="lazy" class="thumb of-c d-b" src="{{ .Params.image }}" alt="{{ .CurrentSection.Title }} - {{ .Title }}">
     {{- partial "meta.html" . -}}
   </div>
-  <div class="gg-15 ai-c"><h2>{{ .CurrentSection.Title }} — {{ .Title }}</h2></div>
+  <div class="d-f gg-15 ai-c"><h2>{{ .CurrentSection.Title }} — {{ .Title }}</h2></div>
   {{ .Page.TableOfContents }}
   {{- .Content -}}
   <script src="/js/script.js"></script>
