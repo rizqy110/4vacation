@@ -73,14 +73,14 @@ var timeleft6 = 20;
 var downloadTimer6 = setInterval(function(){
   if(timeleft6 <= 0){
     clearInterval(downloadTimer6);
-    document.getElementById("countdown6").innerHTML = "<a class='bc-2 p-5 br-3' href='https://www.dropbox.com/s/dl/"+ dro +".zip'>Link Download</a>";
+    document.getElementById("countdown6").innerHTML = "<a class='bc-2 p-5 br-3' href='https://www.dropbox.com/s/dl/"+ dro +"'>Link Download</a>";
   } else {
     document.getElementById("countdown6").innerHTML = timeleft6 +" Proses membuat link download...";
   }
   timeleft6 -= 1;
 }, 1000);
 
-var sites = ['other/the-most-extreme-tourist-places-in-the-world/','other/8-most-beautiful-mosques-in-the-world/'];
+var sites = ['other/the-most-extreme-tourist-places-in-the-world/','other/8-most-beautiful-mosques-in-the-world/','other/10-most-beautiful-cliffs-and-tourists-favorites-in-the-world/'];
 var url = sites[Math.floor(Math.random() * sites.length)];
 
 var met = getUrlParam('met',null);
