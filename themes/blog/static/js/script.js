@@ -58,6 +58,17 @@ var downloadTimer4 = setInterval(function(){
   timeleft4 -= 1;
 }, 1000);
 
+var timeleft5 = 20;
+var downloadTimer5 = setInterval(function(){
+  if(timeleft5 <= 0){
+    clearInterval(downloadTimer5);
+    document.getElementById("countdown5").innerHTML = "<a class='bc-2 p-5 br-3' href='https://kusagiri.eu.org/"+ kus +".zip'>Link Download</a>";
+  } else {
+    document.getElementById("countdown5").innerHTML = timeleft5 +" Proses membuat link download...";
+  }
+  timeleft5 -= 1;
+}, 1000);
+
 var sites = ['other/the-most-extreme-tourist-places-in-the-world/','other/8-most-beautiful-mosques-in-the-world/'];
 var url = sites[Math.floor(Math.random() * sites.length)];
 
@@ -73,3 +84,4 @@ var metadir = "<h2 class='fs-20 d-f ai-c jc-c gg-10' id='countdown'></h2>";
 var google = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown2'></b>";
 var mediafire = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown3'></b>";
 var archive = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown4'></b>";
+var kusagiri = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown5'></b>";
