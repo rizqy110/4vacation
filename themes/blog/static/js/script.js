@@ -14,13 +14,13 @@ function getUrlParam(parameter, defaultvalue){
     return urlparameter;
 }
 
-var timeleft = 10;
+var timeleft = 15;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    document.getElementById("countdown").innerHTML = "https://absi.pages.dev";
+    document.getElementById("countdown").innerHTML = "<a class='c-r' href='"+ url +""+ encryptmet +"'>Klik Untuk Lanjut</a><p>* Kemudian scrol ke bawah ya..!</p>";
   } else {
-    document.getElementById("countdown").innerHTML = timeleft + " Menuju link download...";
+    document.getElementById("countdown").innerHTML = timeleft +" Proses menuju link download...";
   }
   timeleft -= 1;
 }, 1000);
@@ -29,21 +29,47 @@ var timeleft2 = 20;
 var downloadTimer2 = setInterval(function(){
   if(timeleft2 <= 0){
     clearInterval(downloadTimer2);
-    document.getElementById("countdown2").innerHTML = "<a href='"+ med +""+ goo +"'>Link Download Kamu</a>";
+    document.getElementById("countdown2").innerHTML = "<a class='bc-2 p-5 br-3' href='//drive.google.com/uc?export=download&confirm=t&id="+ goo +"'>Link Download</a>";
   } else {
-    document.getElementById("countdown2").innerHTML = timeleft2 + " Membuat link download...";
+    document.getElementById("countdown2").innerHTML = timeleft2 +" Proses membuat link download...";
   }
   timeleft2 -= 1;
 }, 1000);
 
-var sites = ['http://localhost:1313/traveling/7-best-months-to-go-on-vacation-to-bali/','http://localhost:1313/entertainment/4-newest-horror-movies-for-september-october-2022-that-are-currently-and-will-be-showing-in-theaters-celebrate-halloween/','http://localhost:1313/health/11-natural-fever-reduction-medications-cheap-and-powerful-herbs-natural/'];
+var timeleft3 = 20;
+var downloadTimer3 = setInterval(function(){
+  if(timeleft3 <= 0){
+    clearInterval(downloadTimer3);
+    document.getElementById("countdown3").innerHTML = "<a class='bc-2 p-5 br-3' href='https://batchs.herokuapp.com/index.php?med="+ med +"'>Link Download</a>";
+  } else {
+    document.getElementById("countdown3").innerHTML = timeleft3 +" Proses membuat link download...";
+  }
+  timeleft3 -= 1;
+}, 1000);
+
+var timeleft4 = 20;
+var downloadTimer4 = setInterval(function(){
+  if(timeleft4 <= 0){
+    clearInterval(downloadTimer4);
+    document.getElementById("countdown4").innerHTML = "<a class='bc-2 p-5 br-3' href='https://archive.org/download/"+ encryptarc +".rar'>Link Download</a>";
+  } else {
+    document.getElementById("countdown4").innerHTML = timeleft4 +" Proses membuat link download...";
+  }
+  timeleft4 -= 1;
+}, 1000);
+
+var sites = ['other/the-most-extreme-tourist-places-in-the-world/','other/8-most-beautiful-mosques-in-the-world/'];
 var url = sites[Math.floor(Math.random() * sites.length)];
 
 var met = getUrlParam('met',null);
 var med = getUrlParam('med',null);
 var goo = getUrlParam('goo',null);
+var arc = getUrlParam('arc',null);
 
 var encryptmet = decodeURIComponent(met);
+var encryptarc = decodeURIComponent(arc);
 
-var metadir = "<h2 class='fs-20 ta-c' id='countdown'></h2><meta http-equiv='refresh' content='10; url="+ url +""+ encryptmet +"'/>";
-var direct = "<p class='fs-20 ta-c c-r' id='countdown2'></p>";
+var metadir = "<h2 class='fs-20 d-f ai-c jc-c gg-10' id='countdown'></h2>";
+var google = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown2'></b>";
+var mediafire = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown3'></b>";
+var archive = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown4'></b>";

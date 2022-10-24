@@ -9,7 +9,7 @@
   {{ .Page.TableOfContents }}
   {{- .Content -}}
   <script src="/js/script.js"></script>
-  <script>if(med != null){document.write(direct);}else if(goo != null){document.write(direct);}else{null};</script>
+  <script>if(med != null){document.write(mediafire);}else if(goo != null){document.write(google);}else if(arc != null){document.write(archive);}else{null};</script>
 </div>
 {{ else }}
 {{- .Content -}}
