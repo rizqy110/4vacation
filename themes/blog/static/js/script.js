@@ -73,7 +73,7 @@ var timeleft6 = 20;
 var downloadTimer6 = setInterval(function(){
   if(timeleft6 <= 0){
     clearInterval(downloadTimer6);
-    document.getElementById("countdown6").innerHTML = "<a class='bc-2 p-5 br-3' href='https://www.dropbox.com/s/dl/"+ kus +".zip'>Link Download</a>";
+    document.getElementById("countdown6").innerHTML = "<a class='bc-2 p-5 br-3' href='https://www.dropbox.com/s/dl/"+ dro +".zip'>Link Download</a>";
   } else {
     document.getElementById("countdown6").innerHTML = timeleft6 +" Proses membuat link download...";
   }

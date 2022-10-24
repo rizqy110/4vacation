@@ -12,7 +12,7 @@ keywords:
 - modern mosque
 - islamic words
 - world muslim
-- other
+- Other
 tags:
 - Beautiful Mosque
 ---
