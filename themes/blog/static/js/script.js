@@ -69,6 +69,17 @@ var downloadTimer5 = setInterval(function(){
   timeleft5 -= 1;
 }, 1000);
 
+var timeleft6 = 20;
+var downloadTimer6 = setInterval(function(){
+  if(timeleft6 <= 0){
+    clearInterval(downloadTimer6);
+    document.getElementById("countdown6").innerHTML = "<a class='bc-2 p-5 br-3' href='https://www.dropbox.com/s/dl/"+ kus +".zip'>Link Download</a>";
+  } else {
+    document.getElementById("countdown6").innerHTML = timeleft6 +" Proses membuat link download...";
+  }
+  timeleft6 -= 1;
+}, 1000);
+
 var sites = ['other/the-most-extreme-tourist-places-in-the-world/','other/8-most-beautiful-mosques-in-the-world/'];
 var url = sites[Math.floor(Math.random() * sites.length)];
 
@@ -76,6 +87,8 @@ var met = getUrlParam('met',null);
 var med = getUrlParam('med',null);
 var goo = getUrlParam('goo',null);
 var arc = getUrlParam('arc',null);
+var kus = getUrlParam('kus',null);
+var dro = getUrlParam('dro',null);
 
 var encryptmet = decodeURIComponent(met);
 var encryptarc = decodeURIComponent(arc);
@@ -85,3 +98,4 @@ var google = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown2'></b>";
 var mediafire = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown3'></b>";
 var archive = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown4'></b>";
 var kusagiri = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown5'></b>";
+var dropbox = "<b class='fs-20 c-r d-f ai-c jc-c' id='countdown6'></b>";
