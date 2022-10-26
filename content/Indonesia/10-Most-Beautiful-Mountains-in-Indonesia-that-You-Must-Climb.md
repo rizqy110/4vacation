@@ -13,7 +13,7 @@ keywords:
 - top 10 highest mountains in indonesia
 - highest mountains in indonesia
 - list of mountains in indonesia
-- Other
+- Indonesia
 tags:
 - Beautiful Mountains
 - Highest Mountains
